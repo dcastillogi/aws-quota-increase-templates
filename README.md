@@ -1,11 +1,11 @@
 # aws-quota-increase-templates
 
-Templates for requesting AWS Service Quotas increases: one folder per service, each with the commands to list current quotas and request an increase, plus a justification template for when the request goes to manual review.
+Templates for requesting AWS Service Quotas increases: one folder per service, each holding a ready-to-fill justification template for when the request goes to manual review or a support case.
 
 ## Layout
 
 ```
-services/<service-code>/README.md   # per-service template
+services/<service-code>/README.md   # justification template for that service
 scripts/new-service.sh              # creates a service folder
 scripts/sync-services.sh            # creates missing folders from Service Quotas
 ```
@@ -28,7 +28,7 @@ Each folder is named after its Service Quotas `service-code`, the value you pass
    ```bash
    aws service-quotas list-requested-service-quota-change-history --service-code ec2
    ```
-4. If AWS asks for more context, reply to the support case using the service's justification template.
+4. If AWS asks for more context, fill in `services/<service-code>/README.md` and paste it into the support case.
 
 ## Tips for faster approval
 

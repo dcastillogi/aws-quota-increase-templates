@@ -1,30 +1,3 @@
-# Amazon Elastic Compute Cloud (Amazon EC2)
-
-- **Service code:** `ec2`
-- **Console:** https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas
-
-## List current quotas
-
-```bash
-aws service-quotas list-service-quotas --service-code ec2 \
-  --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
-```
-
-## Request an increase
-
-```bash
-aws service-quotas request-service-quota-increase \
-  --service-code ec2 \
-  --quota-code <QUOTA_CODE> \
-  --desired-value <VALUE> \
-  --region <REGION>
-```
-
-## Justification template
-
-> For requests that go to manual review or are handled through a support case.
-
-```text
 Service: Amazon Elastic Compute Cloud (Amazon EC2) (ec2)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
@@ -42,10 +15,3 @@ Needed by:
 
 Current usage and trend:
 <Current usage vs. the limit, expected growth.>
-```
-
-## Commonly requested quotas
-
-| Quota | Quota code | Notes |
-|-------|------------|-------|
-|       |            |       |

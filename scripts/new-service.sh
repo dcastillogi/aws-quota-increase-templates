@@ -8,33 +8,6 @@ dir="$root/services/$code"
 [ -e "$dir/README.md" ] && { echo "already exists: $code"; exit 0; }
 mkdir -p "$dir"
 cat > "$dir/README.md" <<TPL
-# $name
-
-- **Service code:** \`$code\`
-- **Console:** https://console.aws.amazon.com/servicequotas/home/services/$code/quotas
-
-## List current quotas
-
-\`\`\`bash
-aws service-quotas list-service-quotas --service-code $code \\
-  --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
-\`\`\`
-
-## Request an increase
-
-\`\`\`bash
-aws service-quotas request-service-quota-increase \\
-  --service-code $code \\
-  --quota-code <QUOTA_CODE> \\
-  --desired-value <VALUE> \\
-  --region <REGION>
-\`\`\`
-
-## Justification template
-
-> For requests that go to manual review or are handled through a support case.
-
-\`\`\`text
 Service: $name ($code)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
@@ -52,12 +25,5 @@ Needed by:
 
 Current usage and trend:
 <Current usage vs. the limit, expected growth.>
-\`\`\`
-
-## Commonly requested quotas
-
-| Quota | Quota code | Notes |
-|-------|------------|-------|
-|       |            |       |
 TPL
 echo "created: $code"

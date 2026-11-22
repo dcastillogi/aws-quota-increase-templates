@@ -1,30 +1,3 @@
-# Amazon Timestream for InfluxDB
-
-- **Service code:** `timestream-influxdb`
-- **Console:** https://console.aws.amazon.com/servicequotas/home/services/timestream-influxdb/quotas
-
-## List current quotas
-
-```bash
-aws service-quotas list-service-quotas --service-code timestream-influxdb \
-  --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
-```
-
-## Request an increase
-
-```bash
-aws service-quotas request-service-quota-increase \
-  --service-code timestream-influxdb \
-  --quota-code <QUOTA_CODE> \
-  --desired-value <VALUE> \
-  --region <REGION>
-```
-
-## Justification template
-
-> For requests that go to manual review or are handled through a support case.
-
-```text
 Service: Amazon Timestream for InfluxDB (timestream-influxdb)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
@@ -42,10 +15,3 @@ Needed by:
 
 Current usage and trend:
 <Current usage vs. the limit, expected growth.>
-```
-
-## Commonly requested quotas
-
-| Quota | Quota code | Notes |
-|-------|------------|-------|
-|       |            |       |

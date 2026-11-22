@@ -1,30 +1,3 @@
-# Amazon Cognito User Pools
-
-- **Service code:** `cognito-idp`
-- **Console:** https://console.aws.amazon.com/servicequotas/home/services/cognito-idp/quotas
-
-## List current quotas
-
-```bash
-aws service-quotas list-service-quotas --service-code cognito-idp \
-  --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
-```
-
-## Request an increase
-
-```bash
-aws service-quotas request-service-quota-increase \
-  --service-code cognito-idp \
-  --quota-code <QUOTA_CODE> \
-  --desired-value <VALUE> \
-  --region <REGION>
-```
-
-## Justification template
-
-> For requests that go to manual review or are handled through a support case.
-
-```text
 Service: Amazon Cognito User Pools (cognito-idp)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
@@ -42,10 +15,3 @@ Needed by:
 
 Current usage and trend:
 <Current usage vs. the limit, expected growth.>
-```
-
-## Commonly requested quotas
-
-| Quota | Quota code | Notes |
-|-------|------------|-------|
-|       |            |       |

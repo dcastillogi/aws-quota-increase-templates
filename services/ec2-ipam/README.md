@@ -1,30 +1,3 @@
-# IPAM
-
-- **Service code:** `ec2-ipam`
-- **Console:** https://console.aws.amazon.com/servicequotas/home/services/ec2-ipam/quotas
-
-## List current quotas
-
-```bash
-aws service-quotas list-service-quotas --service-code ec2-ipam \
-  --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
-```
-
-## Request an increase
-
-```bash
-aws service-quotas request-service-quota-increase \
-  --service-code ec2-ipam \
-  --quota-code <QUOTA_CODE> \
-  --desired-value <VALUE> \
-  --region <REGION>
-```
-
-## Justification template
-
-> For requests that go to manual review or are handled through a support case.
-
-```text
 Service: IPAM (ec2-ipam)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
@@ -42,10 +15,3 @@ Needed by:
 
 Current usage and trend:
 <Current usage vs. the limit, expected growth.>
-```
-
-## Commonly requested quotas
-
-| Quota | Quota code | Notes |
-|-------|------------|-------|
-|       |            |       |
