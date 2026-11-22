@@ -1,4 +1,4 @@
-# Amazon Elastic Container Service
+# Amazon Elastic Container Service (Amazon ECS)
 
 - **Service code:** `ecs`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/ecs/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Elastic Container Service (ecs)
+Servicio: Amazon Elastic Container Service (Amazon ECS) (ecs)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

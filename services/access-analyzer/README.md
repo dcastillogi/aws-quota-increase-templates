@@ -1,4 +1,4 @@
-# IAM Access Analyzer
+# Access Analyzer
 
 - **Service code:** `access-analyzer`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/access-analyzer/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: IAM Access Analyzer (access-analyzer)
+Servicio: Access Analyzer (access-analyzer)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

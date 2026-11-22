@@ -1,4 +1,4 @@
-# Amazon Simple Email Service (SES)
+# Amazon Simple Email Service(Amazon SES)
 
 - **Service code:** `ses`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/ses/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Simple Email Service (SES) (ses)
+Servicio: Amazon Simple Email Service(Amazon SES) (ses)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

@@ -1,4 +1,4 @@
-# Amazon AppStream 2.0
+# Amazon WorkSpaces Applications
 
 - **Service code:** `appstream2`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/appstream2/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon AppStream 2.0 (appstream2)
+Servicio: Amazon WorkSpaces Applications (appstream2)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

@@ -1,4 +1,4 @@
-# Amazon GameLift
+# Amazon GameLift Servers
 
 - **Service code:** `gamelift`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/gamelift/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon GameLift (gamelift)
+Servicio: Amazon GameLift Servers (gamelift)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

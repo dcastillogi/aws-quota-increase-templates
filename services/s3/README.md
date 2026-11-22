@@ -1,4 +1,4 @@
-# Amazon Simple Storage Service (S3)
+# Amazon Simple Storage Service (Amazon S3)
 
 - **Service code:** `s3`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/s3/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Simple Storage Service (S3) (s3)
+Servicio: Amazon Simple Storage Service (Amazon S3) (s3)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

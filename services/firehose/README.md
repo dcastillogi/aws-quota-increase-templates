@@ -1,4 +1,4 @@
-# Amazon Data Firehose
+# Amazon Kinesis Data Firehose
 
 - **Service code:** `firehose`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/firehose/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Data Firehose (firehose)
+Servicio: Amazon Kinesis Data Firehose (firehose)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

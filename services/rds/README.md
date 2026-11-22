@@ -1,4 +1,4 @@
-# Amazon Relational Database Service (RDS)
+# Amazon Relational Database Service (Amazon RDS)
 
 - **Service code:** `rds`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/rds/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Relational Database Service (RDS) (rds)
+Servicio: Amazon Relational Database Service (Amazon RDS) (rds)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

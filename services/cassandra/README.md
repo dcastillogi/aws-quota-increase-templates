@@ -1,4 +1,4 @@
-# Amazon Keyspaces
+# Amazon Keyspaces (for Apache Cassandra)
 
 - **Service code:** `cassandra`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/cassandra/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Keyspaces (cassandra)
+Servicio: Amazon Keyspaces (for Apache Cassandra) (cassandra)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

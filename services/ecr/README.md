@@ -1,4 +1,4 @@
-# Amazon Elastic Container Registry
+# Amazon Elastic Container Registry (Amazon ECR)
 
 - **Service code:** `ecr`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/ecr/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Elastic Container Registry (ecr)
+Servicio: Amazon Elastic Container Registry (Amazon ECR) (ecr)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

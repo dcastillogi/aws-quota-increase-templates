@@ -1,4 +1,4 @@
-# Amazon MWAA (Managed Workflows for Apache Airflow)
+# Amazon Managed Workflows for Apache Airflow
 
 - **Service code:** `airflow`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/airflow/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon MWAA (Managed Workflows for Apache Airflow) (airflow)
+Servicio: Amazon Managed Workflows for Apache Airflow (airflow)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

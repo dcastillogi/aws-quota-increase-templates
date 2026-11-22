@@ -1,4 +1,4 @@
-# AWS Shield
+# AWS Shield Advanced
 
 - **Service code:** `shield`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/shield/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: AWS Shield (shield)
+Servicio: AWS Shield Advanced (shield)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

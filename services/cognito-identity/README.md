@@ -1,4 +1,4 @@
-# Amazon Cognito Identity Pools
+# Amazon Cognito Federated Identities
 
 - **Service code:** `cognito-identity`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/cognito-identity/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Cognito Identity Pools (cognito-identity)
+Servicio: Amazon Cognito Federated Identities (cognito-identity)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

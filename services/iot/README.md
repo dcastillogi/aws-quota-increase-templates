@@ -1,4 +1,4 @@
-# AWS IoT Core
+# AWS IoT
 
 - **Service code:** `iot`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/iot/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: AWS IoT Core (iot)
+Servicio: AWS IoT (iot)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

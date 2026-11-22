@@ -1,4 +1,4 @@
-# AWS Application Migration Service
+# Application Migration
 
 - **Service code:** `mgn`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/mgn/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: AWS Application Migration Service (mgn)
+Servicio: Application Migration (mgn)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

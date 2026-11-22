@@ -1,4 +1,4 @@
-# AWS Certificate Manager
+# AWS Certificate Manager (ACM)
 
 - **Service code:** `acm`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/acm/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: AWS Certificate Manager (acm)
+Servicio: AWS Certificate Manager (ACM) (acm)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

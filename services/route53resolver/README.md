@@ -1,4 +1,4 @@
-# Amazon Route 53 Resolver
+# Route 53 Resolver
 
 - **Service code:** `route53resolver`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/route53resolver/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Route 53 Resolver (route53resolver)
+Servicio: Route 53 Resolver (route53resolver)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

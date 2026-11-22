@@ -1,4 +1,4 @@
-# AWS Key Management Service
+# AWS Key Management Service (AWS KMS)
 
 - **Service code:** `kms`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/kms/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: AWS Key Management Service (kms)
+Servicio: AWS Key Management Service (AWS KMS) (kms)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

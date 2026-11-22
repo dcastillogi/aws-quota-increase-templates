@@ -1,4 +1,4 @@
-# Amazon Simple Notification Service (SNS)
+# Amazon Simple Notification Service (Amazon SNS)
 
 - **Service code:** `sns`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/sns/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Simple Notification Service (SNS) (sns)
+Servicio: Amazon Simple Notification Service (Amazon SNS) (sns)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

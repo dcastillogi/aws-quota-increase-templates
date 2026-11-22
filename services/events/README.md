@@ -1,4 +1,4 @@
-# Amazon EventBridge
+# Amazon EventBridge (CloudWatch Events)
 
 - **Service code:** `events`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/events/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon EventBridge (events)
+Servicio: Amazon EventBridge (CloudWatch Events) (events)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

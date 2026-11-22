@@ -1,4 +1,4 @@
-# Amazon Elastic Kubernetes Service
+# Amazon Elastic Kubernetes Service (Amazon EKS)
 
 - **Service code:** `eks`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/eks/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Elastic Kubernetes Service (eks)
+Servicio: Amazon Elastic Kubernetes Service (Amazon EKS) (eks)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

@@ -1,4 +1,4 @@
-# Amazon Virtual Private Cloud (VPC)
+# Amazon Virtual Private Cloud (Amazon VPC)
 
 - **Service code:** `vpc`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/vpc/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Virtual Private Cloud (VPC) (vpc)
+Servicio: Amazon Virtual Private Cloud (Amazon VPC) (vpc)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

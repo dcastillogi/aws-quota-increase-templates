@@ -1,4 +1,4 @@
-# Amazon Elastic Compute Cloud (EC2)
+# Amazon Elastic Compute Cloud (Amazon EC2)
 
 - **Service code:** `ec2`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Amazon Elastic Compute Cloud (EC2) (ec2)
+Servicio: Amazon Elastic Compute Cloud (Amazon EC2) (ec2)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>

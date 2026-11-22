@@ -1,4 +1,4 @@
-# Elastic Load Balancing
+# Elastic Load Balancing (ELB)
 
 - **Service code:** `elasticloadbalancing`
 - **Consola:** https://console.aws.amazon.com/servicequotas/home/services/elasticloadbalancing/quotas
@@ -25,7 +25,7 @@ aws service-quotas request-service-quota-increase \
 > Para cuotas que pasan a revisión manual o se piden por caso de soporte.
 
 ```text
-Servicio: Elastic Load Balancing (elasticloadbalancing)
+Servicio: Elastic Load Balancing (ELB) (elasticloadbalancing)
 Cuota: <nombre de la cuota> (<QUOTA_CODE>)
 Región: <región>
 Valor actual: <valor actual>
