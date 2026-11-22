@@ -1,51 +1,51 @@
 # AWS Control Tower
 
 - **Service code:** `controltower`
-- **Consola:** https://console.aws.amazon.com/servicequotas/home/services/controltower/quotas
+- **Console:** https://console.aws.amazon.com/servicequotas/home/services/controltower/quotas
 
-## Ver las cuotas actuales
+## List current quotas
 
 ```bash
 aws service-quotas list-service-quotas --service-code controltower \
   --query 'Quotas[].[QuotaCode,QuotaName,Value,Adjustable]' --output table
 ```
 
-## Pedir el aumento
+## Request an increase
 
 ```bash
 aws service-quotas request-service-quota-increase \
   --service-code controltower \
   --quota-code <QUOTA_CODE> \
-  --desired-value <VALOR> \
+  --desired-value <VALUE> \
   --region <REGION>
 ```
 
-## Plantilla de justificación
+## Justification template
 
-> Para cuotas que pasan a revisión manual o se piden por caso de soporte.
+> For requests that go to manual review or are handled through a support case.
 
 ```text
-Servicio: AWS Control Tower (controltower)
-Cuota: <nombre de la cuota> (<QUOTA_CODE>)
-Región: <región>
-Valor actual: <valor actual>
-Valor solicitado: <valor solicitado>
+Service: AWS Control Tower (controltower)
+Quota: <quota name> (<QUOTA_CODE>)
+Region: <region>
+Current value: <current value>
+Requested value: <requested value>
 
-Caso de uso:
-<Qué es la carga de trabajo y por qué necesita este servicio.>
+Use case:
+<What the workload is and why it needs this service.>
 
-Por qué el valor solicitado:
-<Cálculo: tráfico/usuarios/recursos esperados -> recursos necesarios, con margen.>
+Why this value:
+<Calculation: expected traffic/users/resources -> resources needed, plus headroom.>
 
-Fecha en que se necesita:
-<fecha, y si hay un lanzamiento o evento asociado>
+Needed by:
+<date, and any launch or event tied to it>
 
-Uso actual y tendencia:
-<Uso actual frente al límite, crecimiento esperado.>
+Current usage and trend:
+<Current usage vs. the limit, expected growth.>
 ```
 
-## Cuotas que se suelen pedir
+## Commonly requested quotas
 
-| Cuota | Quota code | Notas |
+| Quota | Quota code | Notes |
 |-------|------------|-------|
 |       |            |       |

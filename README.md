@@ -1,61 +1,61 @@
 # aws-quota-increase-templates
 
-Plantillas para pedir aumentos de cuota (Service Quotas) en AWS: una carpeta por servicio, con los comandos para consultar las cuotas actuales, pedir el aumento y una plantilla de justificación para cuando la solicitud pasa a revisión manual.
+Templates for requesting AWS Service Quotas increases: one folder per service, each with the commands to list current quotas and request an increase, plus a justification template for when the request goes to manual review.
 
-## Estructura
+## Layout
 
 ```
-services/<service-code>/README.md   # plantilla por servicio
-scripts/new-service.sh              # crea la carpeta de un servicio
-scripts/sync-services.sh            # crea las carpetas que falten leyendo Service Quotas
+services/<service-code>/README.md   # per-service template
+scripts/new-service.sh              # creates a service folder
+scripts/sync-services.sh            # creates missing folders from Service Quotas
 ```
 
-Cada carpeta se llama igual que el `service-code` de Service Quotas, que es el valor que se pasa a `--service-code` en la CLI.
+Each folder is named after its Service Quotas `service-code`, the value you pass to `--service-code` in the CLI.
 
-## Cómo pedir un aumento
+## How to request an increase
 
-1. Busca el código de la cuota:
+1. Find the quota code:
    ```bash
    aws service-quotas list-service-quotas --service-code ec2 \
      --query 'Quotas[?Adjustable].[QuotaCode,QuotaName,Value]' --output table
    ```
-2. Pide el aumento:
+2. Request the increase:
    ```bash
    aws service-quotas request-service-quota-increase \
      --service-code ec2 --quota-code L-1216C47A --desired-value 256 --region us-east-1
    ```
-3. Revisa el estado:
+3. Check the status:
    ```bash
    aws service-quotas list-requested-service-quota-change-history --service-code ec2
    ```
-4. Si AWS pide más contexto, responde el caso de soporte con la plantilla de justificación del servicio.
+4. If AWS asks for more context, reply to the support case using the service's justification template.
 
-## Consejos para que lo aprueben rápido
+## Tips for faster approval
 
-- Pide un valor concreto y explica el cálculo (no "lo máximo posible").
-- Indica la fecha en que lo necesitas y si hay un lanzamiento asociado.
-- Pide en la región exacta donde vas a desplegar; las cuotas son por región.
-- Muestra uso actual cercano al límite cuando aplique.
-- En cuentas nuevas, los aumentos grandes suelen tardar más: pide con tiempo.
+- Ask for a specific value and show how you got it (not "as much as possible").
+- Say when you need it and whether a launch depends on it.
+- Request it in the exact region you'll deploy to; quotas are per region.
+- Show current usage close to the limit when it applies.
+- Large increases on new accounts take longer, so ask early.
 
-## Mantener la lista de servicios al día
+## Keeping the service list up to date
 
-Con credenciales AWS activas (la lista se sacó de `us-east-1`):
-
-```bash
-AWS_PROFILE=<perfil> ./scripts/sync-services.sh
-```
-
-Para añadir uno a mano:
+With active AWS credentials (the current list was pulled from `us-east-1`):
 
 ```bash
-./scripts/new-service.sh <service-code> "<Nombre del servicio>"
+AWS_PROFILE=<profile> ./scripts/sync-services.sh
 ```
 
-## Servicios
+To add one by hand:
 
-| Servicio | Service code |
-|----------|--------------|
+```bash
+./scripts/new-service.sh <service-code> "<Service name>"
+```
+
+## Services
+
+| Service | Service code |
+|---------|--------------|
 | [Access Analyzer](services/access-analyzer/) | `access-analyzer` |
 | [Account access manager](services/account-access/) | `account-access` |
 | [Amazon AI Operations](services/aiops/) | `aiops` |

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Lee de Service Quotas todos los servicios disponibles y crea las carpetas que falten.
-# Requiere credenciales AWS válidas.
+# Reads every service from Service Quotas and creates any missing folders.
+# Requires valid AWS credentials.
 set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 region="${AWS_REGION:-us-east-1}"
