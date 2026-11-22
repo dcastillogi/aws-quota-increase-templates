@@ -5,9 +5,9 @@ set -euo pipefail
 code="$1"; name="$2"
 root="$(cd "$(dirname "$0")/.." && pwd)"
 dir="$root/services/$code"
-[ -e "$dir/README.md" ] && { echo "already exists: $code"; exit 0; }
+[ -e "$dir/template.md" ] && { echo "already exists: $code"; exit 0; }
 mkdir -p "$dir"
-cat > "$dir/README.md" <<TPL
+cat > "$dir/template.md" <<TPL
 Service: $name ($code)
 Quota: <quota name> (<QUOTA_CODE>)
 Region: <region>
